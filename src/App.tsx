@@ -101,7 +101,7 @@ export default function App() {
             <>
               <div className="dialog-heading">
                 <h2 id="booking-title" ref={titleRef} tabIndex={-1}>Réserver {selectedFilm.title}</h2>
-                <button type="button" className="close" aria-label="Fermer la réservation" onClick={closeBooking}>
+                <button type="button" className="close" aria-label="Fermer la réservation {selectedFilm.title}" onClick={closeBooking}>
                   <span aria-hidden="true">×</span>
                 </button>
               </div>
